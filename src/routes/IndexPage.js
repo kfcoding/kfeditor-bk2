@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
 import { Layout, Menu, Dropdown, Icon } from 'antd';
+import Example from '../components/Example';
 
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
@@ -70,7 +71,7 @@ function IndexPage() {
             </Menu>
           </Sider>
           <Content style={{padding: '0 24px', minHeight: 980}}>
-            Content
+            <Example/>
           </Content>
         </Layout>
       </Content>
