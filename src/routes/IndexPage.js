@@ -1,11 +1,36 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './IndexPage.css';
+import Editor from '../components/Editor';
 import { Layout, Menu, Dropdown, Icon } from 'antd';
+
 import Example from '../components/Example';
 
+import {Value} from 'slate';
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
+
+const initialValue = Value.fromJSON({
+  document: {
+    nodes: [
+      {
+        object: 'block',
+        type: 'paragraph',
+        nodes: [
+          {
+            object: 'text',
+            leaves: [
+              {
+                text: 'A line of text in a paragraph.',
+              }
+            ],
+          },
+        ],
+      },
+    ],
+  },
+});
+
 const menu = (
   <Menu>
     <Menu.Item key="0">
@@ -71,7 +96,8 @@ function IndexPage() {
             </Menu>
           </Sider>
           <Content style={{padding: '0 24px', minHeight: 980}}>
-            <Example/>
+            {/*<Example/>*/}
+            <Editor content={initialValue}/>
           </Content>
         </Layout>
       </Content>
