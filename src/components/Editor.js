@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import CannerEditor from 'kf-slate-editor';
+// import CannerEditor from 'kf-slate-editor';
 
 
 class Editor extends React.Component{
@@ -20,12 +20,13 @@ class Editor extends React.Component{
 
     return (
       <div style={{margin: '20px'}}>
-        <CannerEditor
-          value={value}
-          onChange={onChange}
-        />
+        {/*<CannerEditor*/}
+          {/*value={value}*/}
+          {/*onChange={onChange}*/}
+        {/*/>*/}
       </div>
     );
   }
 }
+
 export default Editor

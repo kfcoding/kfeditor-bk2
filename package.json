@@ -13,7 +13,8 @@
     "kf-slate-editor": "0.0.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "slate": "^0.33.6"
+    "slate": "^0.33.6",
+    "slate-react": "^0.12.6"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",
