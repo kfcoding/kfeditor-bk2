@@ -7,6 +7,7 @@ import {Value} from 'slate';
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
 
+
 const initialValue = Value.fromJSON({
   document: {
     nodes: [

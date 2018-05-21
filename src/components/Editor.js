@@ -5,7 +5,7 @@
 import React from 'react';
 
 import CannerEditor from 'kf-slate-editor';
-
+import './fontawesome.min.css';
 
 class Editor extends React.Component{
   // Set the initial state when the app is first constructed.
