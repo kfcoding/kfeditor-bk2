@@ -3,6 +3,9 @@ import { connect } from 'dva';
 import styles from './IndexPage.css';
 import Editor from '../components/Editor';
 import { Layout, Menu, Dropdown, Icon } from 'antd';
+
+import Example from '../components/Example';
+
 import {Value} from 'slate';
 const {Header, Content, Footer, Sider} = Layout;
 const {SubMenu} = Menu;
@@ -94,6 +97,7 @@ function IndexPage() {
             </Menu>
           </Sider>
           <Content style={{padding: '0 24px', minHeight: 980}}>
+            {/*<Example/>*/}
             <Editor content={initialValue}/>
           </Content>
         </Layout>

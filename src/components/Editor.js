@@ -4,8 +4,13 @@
 
 import React from 'react';
 
+<<<<<<< HEAD
 import CannerEditor from 'kf-slate-editor';
 import './fontawesome.min.css';
+=======
+// import CannerEditor from 'kf-slate-editor';
+
+>>>>>>> 0d3612c8576764a77eeacbfaeacebf006f0cde61
 
 class Editor extends React.Component{
   // Set the initial state when the app is first constructed.
@@ -20,12 +25,13 @@ class Editor extends React.Component{
 
     return (
       <div style={{margin: '20px'}}>
-        <CannerEditor
-          value={value}
-          onChange={onChange}
-        />
+        {/*<CannerEditor*/}
+          {/*value={value}*/}
+          {/*onChange={onChange}*/}
+        {/*/>*/}
       </div>
     );
   }
 }
+
 export default Editor
